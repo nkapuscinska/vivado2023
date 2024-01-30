@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sun Jan 16 14:20:28 2022
+# Process ID: 16592
+# Current directory: D:/Vivado/MateuszJagielski/stopwatch_MJ
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12480 D:\Vivado\MateuszJagielski\stopwatch_MJ\stopwatch_MJ.xpr
+# Log file: D:/Vivado/MateuszJagielski/stopwatch_MJ/vivado.log
+# Journal file: D:/Vivado/MateuszJagielski/stopwatch_MJ\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ.xpr
+update_compile_order -fileset sources_1

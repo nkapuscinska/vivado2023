@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+   0.000ns: Starting test
+  15.000ns: All 16 test cases PASSED
+  15.000ns: Finished test
+$stop called at time : 15 ns : File "C:/Users/natal/OneDrive/Dokumenty/szkola/vivado/simple_gates/simple_gates.srcs/sim_1/new/monitor.sv" Line 30

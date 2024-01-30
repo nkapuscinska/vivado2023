@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Jan 19 17:14:50 2022
+# Process ID: 24212
+# Current directory: D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ.runs/impl_1
+# Command line: vivado.exe -log stopwatch.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source stopwatch.tcl -notrace
+# Log file: D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ.runs/impl_1/stopwatch.vdi
+# Journal file: D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source stopwatch.tcl -notrace

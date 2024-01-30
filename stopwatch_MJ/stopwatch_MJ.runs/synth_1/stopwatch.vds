@@ -1,0 +1,385 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Jan 19 17:14:09 2022
+# Process ID: 3156
+# Current directory: D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ.runs/synth_1
+# Command line: vivado.exe -log stopwatch.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source stopwatch.tcl
+# Log file: D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ.runs/synth_1/stopwatch.vds
+# Journal file: D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source stopwatch.tcl -notrace
+Command: synth_design -top stopwatch -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 30940 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 343.785 ; gain = 94.551
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'stopwatch' [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/stopwatch.v:19]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/clk_divider.v:16]
+	Parameter FREQUENCY_IN_HZ bound to: 100 - type: integer 
+	Parameter LOOP_COUNTER_AT bound to: 500000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (1#1) [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/clk_divider.v:16]
+INFO: [Synth 8-638] synthesizing module 'clk_divider__parameterized0' [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/clk_divider.v:16]
+	Parameter FREQUENCY_IN_HZ bound to: 5000 - type: integer 
+	Parameter LOOP_COUNTER_AT bound to: 10000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider__parameterized0' (1#1) [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/clk_divider.v:16]
+INFO: [Synth 8-638] synthesizing module 'counter' [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/counter.v:16]
+	Parameter STATE_IDLE bound to: 1'b0 
+	Parameter STATE_COUNT bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'counter' (2#1) [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/counter.v:16]
+INFO: [Synth 8-638] synthesizing module 'bin2bcd' [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/bin2bcd.v:17]
+INFO: [Synth 8-256] done synthesizing module 'bin2bcd' (3#1) [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/bin2bcd.v:17]
+INFO: [Synth 8-638] synthesizing module 'sseg_x4' [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/sseg_x4.v:18]
+INFO: [Synth 8-638] synthesizing module 'ring_counter' [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/ring_counter.v:16]
+	Parameter SIZE bound to: 4 - type: integer 
+	Parameter INIT_VAL bound to: 4'b1110 
+INFO: [Synth 8-256] done synthesizing module 'ring_counter' (4#1) [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/ring_counter.v:16]
+INFO: [Synth 8-638] synthesizing module 'sseg_mux' [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/sseg_mux.v:15]
+INFO: [Synth 8-256] done synthesizing module 'sseg_mux' (5#1) [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/sseg_mux.v:15]
+INFO: [Synth 8-638] synthesizing module 'bcd2sseg' [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/bcd2sseg.v:14]
+	Parameter SSEG_0 bound to: 7'b1000000 
+	Parameter SSEG_1 bound to: 7'b1111001 
+	Parameter SSEG_2 bound to: 7'b0100100 
+	Parameter SSEG_3 bound to: 7'b0110000 
+	Parameter SSEG_4 bound to: 7'b0011001 
+	Parameter SSEG_5 bound to: 7'b0010010 
+	Parameter SSEG_6 bound to: 7'b0000010 
+	Parameter SSEG_7 bound to: 7'b1111000 
+	Parameter SSEG_8 bound to: 7'b0000000 
+	Parameter SSEG_9 bound to: 7'b0010000 
+	Parameter SSEG_X bound to: 7'b0110110 
+INFO: [Synth 8-256] done synthesizing module 'bcd2sseg' (6#1) [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/bcd2sseg.v:14]
+INFO: [Synth 8-256] done synthesizing module 'sseg_x4' (7#1) [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/sseg_x4.v:18]
+INFO: [Synth 8-638] synthesizing module 'sseg_brightness_pwm' [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/sseg_brightness_pwm.v:15]
+INFO: [Synth 8-256] done synthesizing module 'sseg_brightness_pwm' (8#1) [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/sseg_brightness_pwm.v:15]
+INFO: [Synth 8-256] done synthesizing module 'stopwatch' (9#1) [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/stopwatch.v:19]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 385.238 ; gain = 136.004
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 385.238 ; gain = 136.004
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/project_stopwatch.xdc]
+Finished Parsing XDC File [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/project_stopwatch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/project_stopwatch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/stopwatch_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/stopwatch_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 696.969 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 696.969 ; gain = 447.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 696.969 ; gain = 447.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 696.969 ; gain = 447.734
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "clk_div" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_div" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/counter.v:50]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 696.969 ; gain = 447.734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 35    
+	   2 Input      3 Bit       Adders := 7     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 30    
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_divider__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module counter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+Module bin2bcd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 35    
+	   2 Input      3 Bit       Adders := 7     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 30    
+	   2 Input      3 Bit        Muxes := 4     
+Module ring_counter 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module sseg_mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 1     
+Module sseg_brightness_pwm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "u_clk_divider_main/clk_div" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_clk_divider_sseg/clk_div" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_clk_divider_main/clk_div" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_clk_divider_sseg/clk_div" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element u_counter/counter_reg was removed.  [D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ/counter.v:50]
+INFO: [Synth 8-3886] merging instance 'u_sseg_brightness_pwm/state_reg[0]' (FDR) to 'u_sseg_brightness_pwm/state_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_sseg_brightness_pwm/state_reg[1]' (FDR) to 'u_sseg_brightness_pwm/state_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_sseg_brightness_pwm/state_reg[2]' (FDR) to 'u_sseg_brightness_pwm/state_reg[3]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 696.969 ; gain = 447.734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 696.969 ; gain = 447.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 696.969 ; gain = 447.734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 697.078 ; gain = 447.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 697.078 ; gain = 447.844
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 697.078 ; gain = 447.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 697.078 ; gain = 447.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 697.078 ; gain = 447.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 697.078 ; gain = 447.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 697.078 ; gain = 447.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    13|
+|3     |LUT1   |     4|
+|4     |LUT2   |    40|
+|5     |LUT3   |     1|
+|6     |LUT4   |    24|
+|7     |LUT5   |    20|
+|8     |LUT6   |    46|
+|9     |FDCE   |    53|
+|10    |FDPE   |     3|
+|11    |FDRE   |     3|
+|12    |IBUF   |     6|
+|13    |OBUF   |    11|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------------+----------------------------+------+
+|      |Instance                |Module                      |Cells |
++------+------------------------+----------------------------+------+
+|1     |top                     |                            |   225|
+|2     |  u_clk_divider_main    |clk_divider                 |    50|
+|3     |  u_clk_divider_sseg    |clk_divider__parameterized0 |    37|
+|4     |  u_counter             |counter                     |   106|
+|5     |  u_sseg_brightness_pwm |sseg_brightness_pwm         |     6|
+|6     |  u_sseg_x4             |sseg_x4                     |     8|
+|7     |    u_ring_counter      |ring_counter                |     8|
++------+------------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 697.078 ; gain = 447.844
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 697.078 ; gain = 136.113
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 697.078 ; gain = 447.844
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 697.078 ; gain = 459.840
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado/MateuszJagielski/stopwatch_MJ/stopwatch_MJ.runs/synth_1/stopwatch.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file stopwatch_utilization_synth.rpt -pb stopwatch_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 697.078 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 19 17:14:44 2022...

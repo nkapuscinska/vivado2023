@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Jan 27 15:28:00 2023
+# Process ID: 24324
+# Current directory: C:/Users/natal/OneDrive/Dokumenty/szkola/vivado/simple_gates
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9188 C:\Users\natal\OneDrive\Dokumenty\szkola\vivado\simple_gates\simple_gates.xpr
+# Log file: C:/Users/natal/OneDrive/Dokumenty/szkola/vivado/simple_gates/vivado.log
+# Journal file: C:/Users/natal/OneDrive/Dokumenty/szkola/vivado/simple_gates\vivado.jou
+# Running On: DESKTOP-MF2KNL9, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 4, Host memory: 17002 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/natal/OneDrive/Dokumenty/szkola/vivado/simple_gates/simple_gates.xpruupdate_compile_order -fileset sources_1reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+close_project
+open_project C:/Users/natal/OneDrive/Dokumenty/szkola/vivado/simple_gates/simple_gates.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+launch_simulation
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+open_run impl_1
+current_design rtl_1
+open_run synth_1 -name synth_1
+current_design rtl_1
+current_design impl_1
+report_utilization -name utilization_1
+current_design synth_1
+report_power -name {power_1}
+current_design impl_1
+report_power -name {power_1}
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_methodology -name ultrafast_methodology_1
+current_design synth_1
+report_utilization -name utilization_1
+current_design impl_1
+report_utilization -name utilization_2
+report_utilization -name utilization_3
+current_design synth_1
+report_utilization -name utilization_2
+reset_run impl_1
+current_design impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+set_property -name {xsim.simulate.runtime} -value {5000ns} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+source test.tcl
+add_bp {C:/Users/natal/OneDrive/Dokumenty/szkola/vivado/simple_gates/simple_gates.srcs/sim_1/new/tpg.sv} 16
+remove_bps -BreakPointObjsOrIds bp1 
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_sim
