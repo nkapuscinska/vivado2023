@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+ 0.000ns: start simulation
+end of simultion
+$stop called at time : 16749987500 ps : File "/home/student/nkapuscinska/UEC2/backup-dzialajacy/sim/timing_test/timing_test_tb.sv" Line 44

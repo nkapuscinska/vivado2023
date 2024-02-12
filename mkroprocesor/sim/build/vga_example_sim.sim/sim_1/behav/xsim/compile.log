@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/student/nkapuscinska/UEC2/uec2_example_20230301_beta_v2/rtl/vga_example.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_example
+INFO: [VRFC 10-2458] undeclared symbol clkfb, assumed default net type wire [/home/student/nkapuscinska/UEC2/uec2_example_20230301_beta_v2/rtl/vga_example.sv:55]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/student/nkapuscinska/UEC2/uec2_example_20230301_beta_v2/sim/vga_example/vga_example_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/student/nkapuscinska/UEC2/uec2_example_20230301_beta_v2/sim/build/vga_example_sim.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

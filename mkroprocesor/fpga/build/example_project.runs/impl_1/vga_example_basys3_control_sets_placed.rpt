@@ -1,0 +1,83 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
+| Date         : Fri Mar 10 00:04:36 2023
+| Host         : cadence24 running 64-bit CentOS Linux release 7.9.2009 (Core)
+| Command      : report_control_sets -verbose -file vga_example_basys3_control_sets_placed.rpt
+| Design       : vga_example_basys3
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     5 |
+|    Minimum number of control sets                        |     5 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |     8 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     5 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              29 |            9 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               8 |            2 |
+| Yes          | No                    | No                     |               6 |            2 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               5 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+--------------------------------------+--------------------------------------------+------------------+----------------+--------------+
+|     Clock Signal    |             Enable Signal            |              Set/Reset Signal              | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------+--------------------------------------+--------------------------------------------+------------------+----------------+--------------+
+|  vga_example/pclk   | vga_example/my_timing/hc/end_of_line | vga_example/my_timing/vc/vcount[9]_i_1_n_0 |                3 |              5 |         1.67 |
+|  vga_example/pclk   | vga_example/my_timing/hc/end_of_line |                                            |                2 |              6 |         3.00 |
+|  vga_example/clk_ss |                                      |                                            |                1 |              8 |         8.00 |
+|  vga_example/pclk   |                                      | vga_example/my_timing/SR[0]                |                2 |              8 |         4.00 |
+|  vga_example/pclk   |                                      |                                            |                8 |             21 |         2.62 |
++---------------------+--------------------------------------+--------------------------------------------+------------------+----------------+--------------+
+
+

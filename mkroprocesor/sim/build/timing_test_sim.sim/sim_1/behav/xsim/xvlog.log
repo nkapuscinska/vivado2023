@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/student/nkapuscinska/UEC2/backup-dzialajacy/rtl/vga_h_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_h_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/student/nkapuscinska/UEC2/backup-dzialajacy/rtl/vga_timing.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_timing
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/student/nkapuscinska/UEC2/backup-dzialajacy/rtl/vga_v_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_v_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/student/nkapuscinska/UEC2/backup-dzialajacy/sim/timing_test/timing_test_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timing_test_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/student/nkapuscinska/UEC2/backup-dzialajacy/sim/build/timing_test_sim.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

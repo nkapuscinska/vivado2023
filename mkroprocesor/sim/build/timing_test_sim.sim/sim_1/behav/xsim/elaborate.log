@@ -1,0 +1,18 @@
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /home_local/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot timing_test_tb_behav xil_defaultlib.timing_test_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'hcount' might have multiple concurrent drivers [/home/student/nkapuscinska/UEC2/backup-dzialajacy/sim/timing_test/timing_test_tb.sv:25]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_vga_h_counter_sv
+Compiling module xil_defaultlib.vga_h_counter
+Compiling module xil_defaultlib.vga_v_counter
+Compiling module xil_defaultlib.vga_timing
+Compiling module xil_defaultlib.timing_test_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot timing_test_tb_behav

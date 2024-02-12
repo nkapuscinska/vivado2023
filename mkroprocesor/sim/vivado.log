@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Jun  6 16:05:14 2023
+# Process ID: 19271
+# Current directory: /home/student/nkapuscinska/UEC2/mkroprocesor/sim
+# Command line: vivado -mode tcl -source run_simulation.tcl -tclargs top_vga 0
+# Log file: /home/student/nkapuscinska/UEC2/mkroprocesor/sim/vivado.log
+# Journal file: /home/student/nkapuscinska/UEC2/mkroprocesor/sim/vivado.jou
+# Running On: cadence37, OS: Linux, CPU Frequency: 3883.007 MHz, CPU Physical cores: 4, Host memory: 16720 MB
+#-----------------------------------------------------------
+source run_simulation.tcl
+# set target xc7a35tcpg236-1
+# proc usage {} {
+#     puts "usage: vivado -mode tcl -source run_simulation -tclargs module_name show_gui"
+# }
+# proc create_new_project {project_name target top_module files} {
+#     file mkdir build
+#     create_project ${project_name} build -part ${target} -force
+#     
+#     # Read sources
+#     source $files
+# 
+#     set_property top $top_module [get_filesets sim_1]
+#     set_property top_lib xil_defaultlib [get_filesets sim_1]
+#    #  set_property top ${top_module} [current_fileset]
+#    #  update_compile_order -fileset sim_1
+# }
+# proc simulation {} {
+# 
+#     #set_property top $test_top [get_filesets sim_1]
+#     #set_property top_lib xil_defaultlib [get_filesets sim_1]
+#     
+#     launch_simulation
+#     # If simulation needs more time than defult, enable run all
+#     #run all
+#     # relaunch ... TODO
+#     # add_wave ... TODO
+# }
+# if {${argc} != 2} {
+#     usage
+#     exit 1
+# } else {
+#     set test_module [lindex ${argv} 0]
+#     set show_gui [lindex ${argv} 1]
+#     set project_name ${test_module}_sim
+#     set test_files ${test_module}/${test_module}.tcl
+#     set top_module ${test_module}_tb
+#     create_new_project $project_name $target $top_module $test_files   
+#     simulation
+#     
+#     if {${show_gui} == 1} {
+#         start_gui
+#     } else {
+#         exit
+#     }
+# }
+couldn't read file "top_vga/top_vga.tcl": no such file or directory
+    while executing
+"source $files"
+    (procedure "create_new_project" line 6)
+    invoked from within
+"create_new_project $project_name $target $top_module $test_files   "
+    invoked from within
+"if {${argc} != 2} {
+    usage
+    exit 1
+} else {
+    set test_module [lindex ${argv} 0]
+    set show_gui [lindex ${argv} 1]
+    set project_name ${te..."
+    (file "run_simulation.tcl" line 41)
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  6 16:06:13 2023...
